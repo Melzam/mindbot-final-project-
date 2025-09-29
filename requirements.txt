@@ -1,4 +1,5 @@
-aiogram==3.4.1
-openai==0.28
-python-dotenv==1.0.1
+aiogram==3.0.0b7
 aiohttp==3.9.5
+python-dotenv==1.0.1
+openai==0.28
+
