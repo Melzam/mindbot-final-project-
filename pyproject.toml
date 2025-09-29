@@ -2,7 +2,7 @@
 name = "telegram-bot"
 version = "0.1.0"
 description = "Stable version for aiogram bot"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.12"
 
 dependencies = [
     "aiogram==3.0.0b7",
