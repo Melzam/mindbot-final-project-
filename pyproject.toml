@@ -1,13 +1,12 @@
 [project]
-name = "repl-nix-workspace"
+name = "telegram-bot"
 version = "0.1.0"
-description = "Add your description here"
+description = "Stable version for aiogram bot"
 requires-python = ">=3.11"
 
 dependencies = [
-    "aiogram==3.4.1",
+    "aiogram==3.0.0b7",
     "aiohttp==3.9.5",
     "python-dotenv==1.0.1",
-    "openai==0.28",
-    "pydantic==1.10.12"
+    "openai==0.28"
 ]
