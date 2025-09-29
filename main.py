@@ -4,7 +4,6 @@ from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton, FSInputF
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.filters import CommandStart
-from aiogram.client.default import DefaultBotProperties
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import asyncio
 import openai
@@ -17,7 +16,7 @@ ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")  # integer string
 
 # Настройка клиентов
 openai.api_key = OPENAI_API_KEY
-bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)  # 💡 тут всё исправлено
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
 
